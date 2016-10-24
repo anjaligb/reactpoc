@@ -1,0 +1,61 @@
+.thumbnail-card {
+  overflow: hidden;
+  position: relative;
+  height: 325px;
+}
+.thumbnail-card img {
+  width: 100px;
+  height: 100px;
+}
+.thumbnail-card img.loader {
+  background-size: 40%;
+}
+.thumbnail-card .thumbnail-pro {
+  background-color: #00af42;
+  width: 100px;
+  height: 100px;
+  transform: rotate(45deg);
+  position: absolute;
+  right: -50px;
+  top: -50px;
+}
+.thumbnail-card .thumbnail-pro .glyphicon {
+  margin-top: 62px;
+  margin-left: 36px;
+  font-size: 30px;
+  transform: rotate(-45deg);
+  color: white;
+}
+.rating {
+  position: relative;
+}
+.rating .glyphicon-star-half {
+  width: 50%;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+}
+.search-bar,
+.main {
+  margin: 20px auto;
+}
+.dropdown .btn-block {
+  text-align: left;
+}
+.dropdown .btn-block .text {
+  display: inline-block;
+  width: 100%;
+}
+.dropdown .btn-block .caret {
+  margin-left: -10px;
+}
+.carousel .carousel-control {
+  background: none;
+  width: 30px;
+}
+.carousel .carousel-control.left {
+  left: -40px;
+}
+.carousel .carousel-control.right {
+  right: -40px;
+}
