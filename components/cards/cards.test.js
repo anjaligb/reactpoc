@@ -9,7 +9,7 @@ import {mount, shallow} from 'enzyme';
 var jsdom = require('jsdom').jsdom;
 
 const props = {
-    data: [
+    apps: [
         {
             "id": "1099misce-file",
             "code": "4220c271-51cd-4815-807e-ca64761af8c3",
@@ -56,7 +56,7 @@ const props = {
 
 
 
-/*
+
 describe('AppCardRatingsComp via Enzyme', () => {
     it('render react comp', () => {
        // const wrapper = setup();
@@ -68,10 +68,10 @@ describe('AppCardRatingsComp via Enzyme', () => {
        // expect(wrapper.find(AppCardComp)).to.exist; //component present
     });
 
-   it('AppCardBoxComp react comp', () => {
+   it('AppCardBox Comp react comp', () => {
         // const wrapper = setup();
         //console.log(wrapper.debug());
-        let wrapper1 = shallow(<AppCardBoxComp data={props.data} />);
+        let wrapper1 = shallow(<AppCardBoxComp data={props} />);
         console.log("Logging AppCardComp component return from shall dom: ", wrapper1.debug());
         expect(wrapper1.find('div')).to.exist; // Element present
       //  expect(wrapper.find(AppCardComp)).to.exist; //component present
@@ -80,7 +80,7 @@ describe('AppCardRatingsComp via Enzyme', () => {
     it('AppCardComp react comp', () => {
         // const wrapper = setup();
         //console.log(wrapper.debug());
-        let wrapper1 = shallow(<AppCardComp data={props.data} />);
+        let wrapper1 = shallow(<AppCardComp data={props} />);
         console.log("Logging AppCardComp component return from shall dom: ", wrapper1.debug());
         expect(wrapper1.find('div')).to.exist; // Element present
         //  expect(wrapper.find(AppCardComp)).to.exist; //component present
@@ -88,7 +88,7 @@ describe('AppCardRatingsComp via Enzyme', () => {
     it('AppCard react comp', () => {
         // const wrapper = setup();
         //console.log(wrapper.debug());
-        let wrapper1 = shallow(<AppCard data={props.data} />);
+        let wrapper1 = shallow(<AppCard item={props.apps[0]} key={props.apps[0].id} />);
         console.log("Logging AppCardComp component return from shall dom: ", wrapper1.debug());
         expect(wrapper1.find('div')).to.exist; // Element present
         //  expect(wrapper.find(AppCardComp)).to.exist; //component present
@@ -98,7 +98,7 @@ describe('AppCardRatingsComp via Enzyme', () => {
 
 
 
-*/
+
 //TODO - create more tests with mount to do real dom interactions
 // TODO- create Tests to test highlevel Appcard component
 //get the routing

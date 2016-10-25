@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import CardsPagination from '../components/cards-pagination/CardsPagination.js';
 
-import {loadApps} from '../redux/appActions';
+import {loadApps} from '../actions/appActions';
 
 class Home extends React.Component{
   constructor(props){

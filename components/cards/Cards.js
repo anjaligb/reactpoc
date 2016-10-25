@@ -36,8 +36,8 @@ export class AppCard extends React.Component{
   }
   render() {
     var thumbnailPro = '';
-   // console.log("TEST DATA",this.props.item);
-    if (this.props.item.pro === true) {
+    //console.log("TEST DATA",this.props.item);
+    if (this.props.item.pro=== true) {
       thumbnailPro = <div className="thumbnail-pro"><span className="glyphicon glyphicon-star" aria-hidden="true"></span></div>;
     }
     return (
@@ -92,7 +92,7 @@ export class AppCardBoxComp extends React.Component {
     console.log("inside AppCardBoxComp",this.props.data)
     return (
         <div>
-          <AppCardComp data={ this.props.data } />
+          <AppCardComp data={ this.props.data.apps } />
         </div>
     );
   }

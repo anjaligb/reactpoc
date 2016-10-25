@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom';
 import { Router, browserHistory } from 'react-router';
 
 import routes from './routes';
-import {loadApps} from './redux/appActions';
-import configureStore from './redux/configureStore';
+import {loadApps} from './actions/appActions';
+import configureStore from './store/configureStore';
 
 import {Provider} from 'react-redux';
 
@@ -17,7 +17,7 @@ import MyApps from './containers/MyApps.js';
 import Search from './containers/Search.js';
 import Category from './containers/Category.js';
 
-import listAllApps from './redux/appActions';
+import listAllApps from './actions/appActions';
 /*
 ReactDOM.render(
   (<Router history={browserHistory}>
